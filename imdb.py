@@ -1,25 +1,8 @@
-# -*- coding: utf-8 -*-
-
-#  Internet Movie Database (IMDb) provides a list of their top 250 movies of all times.
-# Create a Python script that goes through all of these 250 movies and finds the cast of each movie.
-# The script should then print out which actors appear most in these movies.
-# The user should be able to control how many actors, at most,
-# are printed (so you can for example ask to see only the top 10 or top 20).
-# The user should also be able to filter the movies by year, or at least ask
-# the script to only include movies that were released after a given year.
-# The format of the output is completely up to you. You can print the actors
-# in descending order, by the number of movies they have appeared in.
-# You can also include the number of movies they have appeared in or even
-# list the movies.
-
-# Infos:
-# http://www.crummy.com/software/BeautifulSoup/bs3/documentation.html#The%20basic%20find%20method:%20findAll%28name,%20attrs,%20recursive,%20text,%20limit,%20**kwargs%29
 import sys
 import re
 from bs4 import BeautifulSoup
 import getopt
 import urllib.request
-from operator import itemgetter
 
 BASE_URL = "http://www.imdb.com"
 topUrl = BASE_URL+"/chart/top"
@@ -108,7 +91,7 @@ def main(argv):
 
 def printHelp():
     output = '''
-    This program prints out the numbers of roles each actor has played in the top 250 movies
+    This program prints out the numbersof roles each actor has played in the top 250 movies
     on IMDB (The Internet Movie Database).
     You can choose between two formats, both containing the actors name and how many movies
     he as playd.

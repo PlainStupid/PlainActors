@@ -10,17 +10,17 @@
 ## Run
 This program has some arguments you can use:
 
--g or --get <number>:
+**-g or --get <number>**:
+	
+	Only display numbers of actors specified by the user.
 
-  Only display numbers of actors specified by the user.
+**-y or --year <year>**:
 
--y or --year <year>:
-
- Only get the actors from films after the year specified.
+	Strong textOnly get the actors from films after the year specified.
  
--b or --beauty:
+**-b or --beauty**:
 
-  Display actors as follow:
+    Display actors as follow:
   
     ActorsName has played in # movies
 
@@ -28,3 +28,4 @@ This program has some arguments you can use:
 Now to run it just run:
 
 ``env/bin/python imdb.py <arguments>``
+
